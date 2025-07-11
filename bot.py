@@ -36,7 +36,7 @@ def main():
     application.add_handler(CommandHandler("groupstats", group_stats))
     application.add_handler(CommandHandler("leaderboard", leaderboard))
 
-    application.run_polling(stop_signals=None, on_startup=on_startup)
+    application.run_polling(stop_signals=None)
 
 if __name__ == "__main__":
     main()
